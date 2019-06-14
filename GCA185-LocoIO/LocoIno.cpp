@@ -42,8 +42,12 @@
  * Thanks also to Rocrail group - http://www.rocrail.org
 *************************************************************************/
 
+#include <Arduino.h>
 #include <LocoNet.h>
 #include <EEPROM.h>
+
+boolean processPeerPacket();
+void sendPeerPacket(uint8_t p0, uint8_t p1, uint8_t p2);
 
 //Uncomment this line to debug through the serial monitor
 #define DEBUG
